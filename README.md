@@ -1,4 +1,4 @@
-# Ping Pong
+# Palindromes
 
 #### In-class Practice Assignment during Epicodus Coding School, C# Practice with constructors in classes and adding custom methods, 12.08.2020
 
