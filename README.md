@@ -65,16 +65,28 @@ Once the project has been cloned to your computer and you have all the necessary
 
 | Spec                                            | Input                        | Output                        |
 | :---------------------------------------------- | :--------------------------- | :---------------------------- |
-| **Build list of number**    | User enters: 15 | `1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15` |
-| **Changes all numbers divisible by 3 to "ping"** | User enters: 15 | `1, 2, ping, 4, 5, ping, 7, 8, ping, 10, 11, ping, 13, 14, ping`|
-| **Changes all numbers divisible by 5 to "pong"**  | User enters: 15 | `1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, pong` |
-| **Changes all numbers divisible by 3 AND 5 to "ping-pong"** | User enters: 15 | `1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong` |
+| **Takes user entry and turns into a string**    | User enters: palindrome | Return: "palindrome" |
+| **Takes user entry and reverses in order**    | User enters: "palindrome" | Returns: "emordnilap" |
+| **Checks to see if reversed entry is a Palindrome** | User enters: "racecar" |  Output: `You've found a palindrome - true`|
+| **Checks to see if reversed entry is not a Palindrome** | User enters: "palindrome" |  Output: `That is not a palindrome. Try again. - false`|
+
 
 ### Tests
 
-Describe: buildList(number)
-Test: buildList(userInputNumber).toEqual(a list of #'s up to userInputNumber)
-Expect: buildList(15).toEqual(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+Describe: flipItAndReverseIt()
+Test: flipItAndReverseIt(userInput).toEqual(userInput read backwards, in order)
+Expect: flipItAndReverseIt(palindrome).toEqual(emordnilap)
+
+Describe: checkPalindromeStatus()
+Test:
+If Array.Reverse() == userInputPalindrome
+  return true
+  Console.WriteLine("You've found a palindrome!")
+Else Array.Reverse(). !== userInputPalindromes
+  return false
+  Console.WriteLine("That is not a palindrome.")
+Expect: checkPalindromeStatus(palindrome).return(False - emordnilap)
+Expect: checkPalindromeStatus(racecar).return(True - racecar)
 
 ## Known bugs
 
