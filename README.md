@@ -64,9 +64,10 @@ Once the project has been cloned to your computer and you have all the necessary
 ### Specs
 
 | Spec                                            | Input                        | Output                        |
-| :---------------------------------------------- | :--------------------------- | :---------------------------- |
-| **Takes user entry and turns into a string**    | User enters: palindrome | Return: "palindrome" |
-| **Takes user entry and reverses in order**    | User enters: "palindrome" | Returns: "emordnilap" |
+| :---------------------------------------------- | :--------------------------- | :----------------------------|
+| **Takes user entry and turns string into array**    | User enters: palindrome | Return: ["palindrome"] |
+| **Takes array and splits word(, etc.) into individual characters**    | User enters: palindrome | Return: ["p", "a", "l", "i", "n", "d", "r", "o", "m", "e"] |
+| **Takes split array and reverses in order**    | Takes: ["p", "a", "l", "i", "n", "d", "r", "o", "m", "e"] | Returns: ["e", "m", "o", "r", "d", "n", "i", "l", "a", "p"] |
 | **Checks to see if reversed entry is a Palindrome** | User enters: "racecar" |  Output: `You've found a palindrome - true`|
 | **Checks to see if reversed entry is not a Palindrome** | User enters: "palindrome" |  Output: `That is not a palindrome. Try again. - false`|
 
